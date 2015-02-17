@@ -1,0 +1,310 @@
+/* FRONTEND LESS
+*********************************************/
+
+// Bootstrap
+@import "bootstrap/bootstrap.less";
+
+// Font Awesome
+@import "font-awesome/font-awesome.less";
+@fa-font-path: "../fonts"; // path correction
+
+
+
+
+html {
+	overflow-y: scroll; /* scrollbar fix (prevent ugly left pull for lower content sites) */
+}
+
+body {
+
+	background-image: url('../images/background.png');
+	font-family: 'Istok Web', sans-serif;
+}
+
+
+
+@vbcl-1: #5d5e5f;
+@vbcl-2: #3c3736;
+@vbcl-3: #2fc2c8;
+@vbcl-4: #969292;
+@vbcl-5: #000000;
+
+@nav-background: @vbcl-1 ;
+@nav-background-child: @vbcl-4 ;
+@nav-a-hover: @vbcl-3 ;
+@nav-a-color: #000000;
+
+@blue-straubsport: #262551;
+
+@title-margin-bottom: 0.3em;
+
+.page-header {
+		margin: 0;
+		margin-bottom: @title-margin-bottom;
+}
+
+.jd-item-page,
+.page-header,
+.blog-featured {
+
+	border-bottom: 0;
+
+	.span6 {
+		.make-lg-column(6; @gutter: @grid-gutter-width);
+
+		h2 {
+			font-size: 20px;
+		}
+	}
+
+	h2 {
+	
+		padding-top: 20px;
+		padding-left: 40px;
+		padding-right: 0px;
+		padding-bottom: 0px;
+		margin: 0;
+		margin-bottom: @title-margin-bottom ;
+
+		font-weight: bold;
+		font-size: 40px;
+	
+		text-transform: uppercase;
+		line-height: 0.9em;
+
+		background-color: @vbcl-2 ;
+		display: block;
+		color: #FFFFFF;
+
+		a {
+		
+			color: #FFFFFF;
+
+			&:hover,
+	  		&:focus {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
+
+.straubsport {
+	display: block;
+	background-color: @blue-straubsport ;
+	padding: 10px;
+	margin-top: 5px;
+}
+
+.footer {
+	font-size: 9pt;
+
+}
+
+.silhouette {
+	background-color: #FFFFFF;
+	background-image: url('../images/silhouette_web_white.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+.whitebackground {
+	background-color: #FFFFFF;
+}
+
+
+.menu_main {
+	list-style: none;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+
+	font-weight: bold;
+
+	.current {
+		background-color: @vbcl-3 ;
+		color: #FFFFFF;
+	}
+	
+
+	> li {
+		position: relative;
+    		display: block;
+
+		background-color: @nav-background ;
+
+		> a {
+			position: relative;
+			display: block;
+			
+			color: @nav-a-color ;
+			
+
+			padding-top: 3px;
+			padding-bottom: 3px;
+			padding-left: 10px;
+
+			&:hover,
+      			&:focus {
+				text-decoration: none;
+				background-color: @nav-a-hover ;
+			}
+		}
+
+		> ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			background-color: @nav-background-child ;
+
+			> li {
+				> a {
+
+					position: relative;
+					display: block;
+					color: @nav-a-color ;
+					
+
+					padding-top: 1px;
+					padding-bottom: 1px;
+					padding-left: 20px;
+
+					&:hover,
+			  		&:focus {
+						text-decoration: none;
+						background-color: @nav-a-hover ;
+					}
+				}
+			}
+		}
+	}
+}
+
+.copyright {
+	padding-top: 10px;
+	font-size: 7pt;
+}
+
+div#result-wrapper {
+	background-color: #EEEEEE;
+	padding: 10px;
+	margin: 20px;
+	border: 2px dashed #606060;
+
+	h3 {
+		margin: 0px;
+	}
+
+
+}
+
+table.results_small {
+
+	width: 100%;
+	font-size: 7pt;
+	border-collapse: collapse;
+
+
+
+	th {
+		background-color: #D3D4D4;
+		font-weight: bold;
+		padding: 2px;
+		text-align: left;
+	}
+
+	td {
+		padding-top: 1px;
+		padding-bottom: 1px;
+		border-bottom: 1px dashed #E3E4E4;
+
+		&.td_hightligh {
+			font-weight: bold;
+		}
+	}
+
+
+}
+
+table.ranking {
+	width: 50%;
+	font-size: 9pt;
+	border-collapse:collapse;
+
+	th {
+		background-color: #D3D4D4;
+		font-weight: bold;
+		padding: 2px;
+		text-align: left;
+	}
+
+	td {
+		padding-top: 1px;
+		padding-bottom: 1px;
+		border-bottom: 1px dashed #E3E4E4;
+
+		&.td_hightligh {
+			font-weight: bold;
+		}
+	}
+
+}
+
+table.results {
+	width: 100%;
+	font-size: 9pt;
+	border-collapse:collapse;
+
+	th {
+		background-color: #D3D4D4;
+		font-weight: bold;
+		padding: 2px;
+		text-align: left;
+	}
+
+	td {
+		padding-top: 1px;
+		padding-bottom: 1px;
+		border-bottom: 1px dashed #E3E4E4;
+
+		&.td_hightligh {
+			font-weight: bold;
+		}
+	}
+
+}
+
+
+.items-row {
+	.row;
+}
+
+
+.article-info {
+	margin-top: 0.2m;
+ 	margin-bottom: 0.9em;
+	width: 100%;
+}
+.article-info .article-info-term {
+  display: none;
+}
+.article-info dd {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.article-info dd strong {
+  font-weight: bold;
+}
+
+
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1170px) {}
+
+
