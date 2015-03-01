@@ -8373,7 +8373,7 @@ body {
 .jd-item-page .span6 h2,
 .page-header .span6 h2,
 .blog-featured .span6 h2 {
-  font-size: 20px;
+  font-size: 14pt;
 }
 .jd-item-page h2,
 .page-header h2,
@@ -8385,7 +8385,7 @@ body {
   margin: 0;
   margin-bottom: 0.3em;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 26pt;
   text-transform: uppercase;
   line-height: 0.9em;
   background-color: #3c3736;
