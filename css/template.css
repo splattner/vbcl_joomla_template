@@ -8345,18 +8345,23 @@ body {
   background-image: url('../images/background.png');
   font-family: 'Istok Web', sans-serif;
 }
+ul.category {
+  list-style: none;
+}
 .page-header {
   margin: 0;
   margin-bottom: 0.3em;
 }
 .jd-item-page,
-.page-header,
-.blog-featured {
+.blog-featured,
+.article-header,
+.tag-category {
   border-bottom: 0;
 }
 .jd-item-page .span6,
-.page-header .span6,
-.blog-featured .span6 {
+.blog-featured .span6,
+.article-header .span6,
+.tag-category .span6 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -8364,20 +8369,27 @@ body {
 }
 @media (min-width: 1200px) {
   .jd-item-page .span6,
-  .page-header .span6,
-  .blog-featured .span6 {
+  .blog-featured .span6,
+  .article-header .span6,
+  .tag-category .span6 {
     float: left;
     width: 50%;
   }
 }
 .jd-item-page .span6 h2,
-.page-header .span6 h2,
-.blog-featured .span6 h2 {
+.blog-featured .span6 h2,
+.article-header .span6 h2,
+.tag-category .span6 h2 {
   font-size: 14pt;
 }
 .jd-item-page h2,
-.page-header h2,
-.blog-featured h2 {
+.blog-featured h2,
+.article-header h2,
+.tag-category h2,
+.jd-item-page .article-title,
+.blog-featured .article-title,
+.article-header .article-title,
+.tag-category .article-title {
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 0px;
@@ -8393,16 +8405,31 @@ body {
   color: #FFFFFF;
 }
 .jd-item-page h2 a,
-.page-header h2 a,
-.blog-featured h2 a {
+.blog-featured h2 a,
+.article-header h2 a,
+.tag-category h2 a,
+.jd-item-page .article-title a,
+.blog-featured .article-title a,
+.article-header .article-title a,
+.tag-category .article-title a {
   color: #FFFFFF;
 }
 .jd-item-page h2 a:hover,
-.page-header h2 a:hover,
 .blog-featured h2 a:hover,
+.article-header h2 a:hover,
+.tag-category h2 a:hover,
+.jd-item-page .article-title a:hover,
+.blog-featured .article-title a:hover,
+.article-header .article-title a:hover,
+.tag-category .article-title a:hover,
 .jd-item-page h2 a:focus,
-.page-header h2 a:focus,
-.blog-featured h2 a:focus {
+.blog-featured h2 a:focus,
+.article-header h2 a:focus,
+.tag-category h2 a:focus,
+.jd-item-page .article-title a:focus,
+.blog-featured .article-title a:focus,
+.article-header .article-title a:focus,
+.tag-category .article-title a:focus {
   text-decoration: none;
 }
 .straubsport {
@@ -8561,4 +8588,7 @@ table.results td.td_hightligh {
 }
 .article-info dd strong {
   font-weight: bold;
+}
+.readmore {
+  margin-bottom: 0.9em;
 }

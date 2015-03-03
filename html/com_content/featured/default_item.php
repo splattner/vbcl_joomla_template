@@ -58,6 +58,11 @@ $icons = $params->get('access-edit') || $params->get('show_print_icon') || $para
 <?php $useDefList = ($params->get('show_modify_date') || $params->get('show_publish_date') || $params->get('show_create_date')
 	|| $params->get('show_hits') || $params->get('show_category') || $params->get('show_parent_category') || $params->get('show_author') ); ?>
 
+<?php if ($info == 0 && $params->get('show_tags', 1) && !empty($this->item->tags->itemTags)) : ?>
+	<?php $this->item->tagLayout = new JLayoutFile('joomla.content.tags'); ?>
+
+	<?php echo $this->item->tagLayout->render($this->item->tags->itemTags); ?>
+<?php endif; ?>
 
 
 <?php if (isset($images->image_intro) && !empty($images->image_intro)) : ?>

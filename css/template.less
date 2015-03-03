@@ -38,14 +38,19 @@ body {
 
 @title-margin-bottom: 0.3em;
 
+ul.category {
+	list-style: none;
+}
+
 .page-header {
 		margin: 0;
 		margin-bottom: @title-margin-bottom;
 }
 
 .jd-item-page,
-.page-header,
-.blog-featured {
+.blog-featured,
+.article-header,
+.tag-category {
 
 	border-bottom: 0;
 
@@ -57,7 +62,8 @@ body {
 		}
 	}
 
-	h2 {
+	h2,
+	.article-title {
 	
 		padding-top: 20px;
 		padding-left: 40px;
@@ -299,6 +305,9 @@ table.results {
   font-weight: bold;
 }
 
+.readmore {
+	margin-bottom: 0.9em;
+}
 
 
 @media (min-width: 768px) {}
