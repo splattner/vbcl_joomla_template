@@ -8592,3 +8592,6 @@ table.results td.td_hightligh {
 .readmore {
   margin-bottom: 0.9em;
 }
+.mod-language {
+  text-align: right;
+}
