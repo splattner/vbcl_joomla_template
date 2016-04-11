@@ -8453,7 +8453,6 @@ ul.category {
 .menu_main {
   list-style: none;
   margin: 0;
-  margin-bottom: 20px;
   padding: 0;
   font-weight: bold;
 }
@@ -8591,4 +8590,7 @@ table.results td.td_hightligh {
 }
 .readmore {
   margin-bottom: 0.9em;
+}
+div.mod-languages ul {
+  text-align: right;
 }

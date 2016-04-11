@@ -9,7 +9,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 <head>
 	<jdoc:include type="head" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
 
 	<!--
 	<link rel="apple-touch-icon-precomposed" href="<?php echo $tpath; ?>/images/apple-touch-icon-57x57-precomposed.png">
