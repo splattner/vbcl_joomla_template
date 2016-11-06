@@ -22,11 +22,11 @@
 
 		
 			<!-- navigation -->
-			<div class="col-lg-2 col-xs-4">
+			<div class="col-lg-2 col-md-3 col-md-12 col-xs-12">
 				 <jdoc:include type="modules" name="navbar" />
 			</div>
 
-			<div class="col-lg-10 col-xs-8">
+			<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
 
 				<div class="row">
 					<!-- breadcrumbs -->
