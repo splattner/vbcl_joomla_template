@@ -1,4 +1,4 @@
-	  
+
 
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
@@ -8,7 +8,7 @@
 	  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.8";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
-	
+
 
 	<!-- CONTENT -->
 	<div class="container whitebackground">
@@ -17,10 +17,10 @@
 				<img class="img-responsive" src="<?php echo $tpath; ?>/images/header_01.jpg" />
 			</div>
 		</div>
-		
+
 		<div class="row">
 
-		
+
 			<!-- navigation -->
 			<div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
 				 <jdoc:include type="modules" name="navbar" />
@@ -38,7 +38,7 @@
 					<div class="col-lg-9 col-xs-12 col-sm-12 ">
 						<jdoc:include type="message" />
 						<jdoc:include type="modules" name="intro" />
-						<jdoc:include type="component" />		
+						<jdoc:include type="component" />
 					</div>
 
 					<!-- sidebar -->
@@ -53,14 +53,14 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<p class=" straubsport">
-					<img class="img-responsive center-block" src="<?php echo $tpath; ?>/images/straubsport.jpg" />
+					<a href="https://www.straubsport.ch/" target="_blank"><img class="img-responsive center-block" src="<?php echo $tpath; ?>/images/straubsport.jpg" /></a>
 				</p>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-lg-12 col-xs-12">
-				<jdoc:include type="modules" name="footer" />	
+				<jdoc:include type="modules" name="footer" />
 			</div>
 		</div>
 	</div>
